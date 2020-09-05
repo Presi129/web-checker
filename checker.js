@@ -2,9 +2,10 @@ const MY_SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/T011VGC0VUJ/B01AJ
 const slack = require('slack-notify')(MY_SLACK_WEBHOOK_URL);
 const request = require('request');
 
-setInterval(request, 3600000);
+setInterval(check, 3600000);
 
-request('https://lista-serwerow.pl/', function (error, response, body) {
+function check () {
+request('https://lista-serwerow.pl/', function check (error, response, body) {
     if (!error && response.statusCode == 200) {
         console.log('Serwer działa poprawnie.')
         }
@@ -13,8 +14,9 @@ request('https://lista-serwerow.pl/', function (error, response, body) {
             channel: '#lista-serwerów',
             text: '*Serwer nie działa, sprawdź co poszło nie tak.*' + '\n' + '*Logi poniżej:*' + '\n' + JSON.stringify(response),
             username: 'webChecker'
-        });
-    }
-})
+        })
+    }}
+)}
+
 
 
