@@ -1,4 +1,4 @@
-const MY_SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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';
+const MY_SLACK_WEBHOOK_URL = '#SLACK_WEBHOOK;
 const slack = require('slack-notify')(MY_SLACK_WEBHOOK_URL);
 const request = require('request');
 
@@ -11,7 +11,7 @@ let time = hours + ':' + minutes + ':' + seconds;
 setInterval(check, 3600000);
 
 function check () {
-request('https://lista-serwerow.pl/', function (error, response) {
+request('#WEB_URL', function (error, response) {
     if (!error && response.statusCode == 200) {
         console.log('Serwer działa poprawnie.')
         }
