@@ -2,7 +2,7 @@ const MY_SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/T011VGC0VUJ/B01AJ
 const slack = require('slack-notify')(MY_SLACK_WEBHOOK_URL);
 const request = require('request');
 
-setTimeout(request, 3600000);
+setInterval(request, 3600000);
 
 request('https://lista-serwerow.pl/', function (error, response, body) {
     if (!error && response.statusCode == 200) {
