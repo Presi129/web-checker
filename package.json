@@ -1,0 +1,14 @@
+{
+  "name": "httpchecker",
+  "version": "1.0.0",
+  "dependencies": {
+    "@slack/bolt": "^2.3.0",
+    "@slack/events-api": "^2.3.4",
+    "@slack/web-api": "^5.11.0",
+    "slack-notify": "^0.1.7"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
+  }
+}
