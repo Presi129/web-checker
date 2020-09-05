@@ -5,7 +5,7 @@ const request = require('request');
 setInterval(check, 3600000);
 
 function check () {
-request('https://lista-serwerow.pl/', function check (error, response, body) {
+request('https://lista-serwerow.pl/', function (error, response, body) {
     if (!error && response.statusCode == 200) {
         console.log('Serwer działa poprawnie.')
         }
