@@ -41,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599323503876</updated>
-      <workItem from="1599323505027" duration="12533000" />
+      <workItem from="1599323505027" duration="16905000" />
     </task>
     <servers />
   </component>
@@ -59,6 +59,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599331143038" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599337688064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599337688064" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1599323713080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
