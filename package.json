@@ -1,6 +1,9 @@
 {
   "name": "httpchecker",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node checker.js"
+  },
   "dependencies": {
     "@slack/bolt": "^2.3.0",
     "@slack/events-api": "^2.3.4",
