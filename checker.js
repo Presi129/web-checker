@@ -17,7 +17,7 @@ request('#WEB_URL', function (error, response) {
         }
     else {
         slack.send({
-            channel: '#lista-serwerów',
+            channel: '#your_channel',
             text: time + ' *Serwer nie działa, sprawdź co poszło nie tak.*' + '\n' + '*Logi poniżej:*' + '\n' + JSON.stringify(response),
             username: 'webChecker'
         })
